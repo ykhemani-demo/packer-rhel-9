@@ -33,7 +33,7 @@ variable "source_ami_filter_virtualization_type" {
 variable "source_ami_filter_name" {
   type        = string
   description = "Source AMI name filter."
-  default      = "RHEL-9*-x86_64*"
+  default     = "RHEL-9*-x86_64*"
 }
 
 variable "source_ami_filter_rooot_device_type" {

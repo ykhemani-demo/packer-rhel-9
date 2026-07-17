@@ -44,4 +44,12 @@ build {
       "sudo yum install -y terraform packer vault-enterprise consul-enterprise nomad-enterprise"
     ]
   }
+
+  provisioner "hcp-sbom" {
+    auto_generate = true
+    scan_path     = "/"
+    destination   = "./sbom/sbom.json"
+    sbom_name     = "auto-generated-sbom-rhel-9"
+  }
+
 }
